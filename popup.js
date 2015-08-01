@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  var baseUrl = 'http://localhost:3000';
+  var baseUrl = 'http://changebook.herokuapp.com';
   $('#checkbook').on('click', function(event) {
     event.preventDefault();
     var bookname = $('#bookname').val();
