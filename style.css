@@ -1,0 +1,17 @@
+body {
+  background-color: #295837;
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+.container {
+  height: 10rem;
+  width: 15rem;
+}
+
+#bookcontainer {
+  text-align: center;
+}

@@ -3,11 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <title>Changebook extension</title>
+  <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   <script src="jquery-1.11.3.min.js"></script>
   <script src="popup.js" charset="utf-8"></script>
 </head>
 <body>
-  <input type="text" id="bookname">
-  <button id="checkbook">Check book!</button>
+  <div class="container">
+    <form>
+      <input type="text" id="bookname" placeholder="title...">
+      <input type="submit" id="checkbook" value="Check book!">
+    </form>
+
+    <div id="bookcontainer">
+      
+    </div>
+  </div>
 </body>
 </html>
