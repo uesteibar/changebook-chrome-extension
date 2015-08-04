@@ -3,7 +3,7 @@ $(document).ready(function() {
   $('#checkbook').on('click', function(event) {
     event.preventDefault();
     var bookname = $('#bookname').val();
-    var request = $.get(baseUrl + '/api/books/search/' + bookname);
+    var request = $.get(baseUrl + '/api/v1/books/search/', {term: bookname});
     request.done(function(data) {
       console.log(data);
       var html = "";
