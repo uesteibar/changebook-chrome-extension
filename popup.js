@@ -1,9 +1,9 @@
 $(document).ready(function() {
-  var baseUrl = 'http://changebook.herokuapp.com';
+  var baseUrl = 'http:changebook.herokuapp.com';
   $('#checkbook').on('click', function(event) {
     event.preventDefault();
     var bookname = $('#bookname').val();
-    var request = $.get(baseUrl + '/api/books/search/' + bookname);
+    var request = $.get(baseUrl + '/api/v1/books/complex_search/', {term: bookname});
     request.done(function(data) {
       console.log(data);
       var html = "";
