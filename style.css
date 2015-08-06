@@ -33,3 +33,22 @@ a {
   cursor: pointer;
   background: white;
 }
+
+.loading {
+  height: 3rem;
+  width: 3rem;
+  border: 4px solid white;
+  animation: 1s linear loading infinite;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+
+@keyframes loading {
+  100%{
+    transform: rotate(360deg);
+  }
+}
